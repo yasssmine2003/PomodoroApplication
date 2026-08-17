@@ -1,0 +1,5 @@
+/*  SPA fallback — all routes serve index.html  */
+/*! https://docs.netlify.com/routing/redirects/  */
+/* ─────────────────────────────────────────── */
+/api/*  https://REPLACE_WITH_YOUR_RENDER_URL/api/:splat  200
+/*      /index.html                                       200

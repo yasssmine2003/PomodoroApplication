@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: flowtime-api
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: python run.py
+    plan: free
+
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true          # Render auto-generates a secure random value
+      - key: DATABASE_URL
+        value: sqlite:///./flowtime.db
+      - key: ACCESS_TOKEN_EXPIRE_MINUTES
+        value: "43200"
+      - key: CORS_ORIGINS
+        value: '["https://REPLACE_WITH_YOUR_NETLIFY_URL.netlify.app","http://localhost:5173"]'
+      - key: ALGORITHM
+        value: HS256
+
+    disk:
+      name: flowtime-db
+      mountPath: /opt/render/project/src/backend
+      sizeGB: 1                      # Persistent disk to keep flowtime.db between deploys

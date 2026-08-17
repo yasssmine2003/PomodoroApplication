@@ -1,0 +1,14 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Environment variables (set the real value in Netlify dashboard → Site settings → Env vars)
+# VITE_API_URL = "https://YOUR_APP.onrender.com"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
