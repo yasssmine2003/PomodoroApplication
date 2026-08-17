@@ -1,0 +1,10 @@
+{
+  "description": "Enhance productivity with a stylish Pomodoro app that helps users manage tasks, track progress, and cultivate focus through elegant design and motivating features.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
