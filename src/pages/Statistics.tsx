@@ -39,8 +39,17 @@ export default function Statistics() {
   const completedTasks = data.tasks.filter(t => t.status === 'completed').length
 
   return (
-    <div className="animate-fade-up" style={{ padding: '28px 24px 100px', maxWidth: '720px', margin: '0 auto' }}>
-
+<div
+      className="animate-fade-up"
+      style={{
+        paddingTop: 'calc(72px + 28px)',
+        paddingBottom: '100px',
+        paddingLeft: '24px',
+        paddingRight: '24px',
+        maxWidth: '720px',
+        margin: '0 auto',
+      }}
+    >
       {/* Header */}
       <div style={{ marginBottom: '24px' }}>
         <h1 style={{ fontFamily: 'Fraunces', fontSize: '32px', fontWeight: '400', color: '#1a1028' }}>Statistics</h1>

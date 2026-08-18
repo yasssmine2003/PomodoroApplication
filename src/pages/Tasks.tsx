@@ -51,8 +51,17 @@ export default function Tasks() {
   const inputStyle: React.CSSProperties = { width: '100%', background: '#faf7f4', border: '1.5px solid rgba(126,87,194,0.15)', borderRadius: '10px', padding: '10px 14px', color: '#1a1028', fontFamily: 'Outfit', fontSize: '14px', outline: 'none' }
 
   return (
-    <div className="animate-fade-up" style={{ padding: '28px 24px 100px', maxWidth: '720px', margin: '0 auto' }}>
-
+<div
+      className="animate-fade-up"
+      style={{
+        paddingTop: 'calc(72px + 28px)',
+        paddingBottom: '100px',
+        paddingLeft: '24px',
+        paddingRight: '24px',
+        maxWidth: '720px',
+        margin: '0 auto',
+      }}
+    >
       {/* Header */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '24px' }}>
         <div>

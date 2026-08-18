@@ -94,7 +94,17 @@ export default function FocusTimer({ onNavigate }: Props) {
   }
 
   return (
-    <div className="animate-fade-up" style={{ padding: '24px 24px 100px', maxWidth: '600px', margin: '0 auto' }}>
+    <div
+      className="animate-fade-up"
+      style={{
+        paddingTop: 'calc(72px + 28px)',
+        paddingBottom: '100px',
+        paddingLeft: '24px',
+        paddingRight: '24px',
+        maxWidth: '720px',
+        margin: '0 auto',
+      }}
+    >
 
       {/* Header */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
